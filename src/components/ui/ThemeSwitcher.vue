@@ -15,7 +15,7 @@ onBeforeUnmount(() => theme.destroy());
 </script>
 
 <template>
-  <button @click="changeTheme" class="cursor-pointer">
+  <button @click="changeTheme" class="cursor-pointer dark:text-white">
     <Transition name="theme-icon" mode="out-in">
       <Moon v-if="currentTheme === 'dark'" key="moon" size="md" />
 
